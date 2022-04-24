@@ -1,0 +1,26 @@
+
+script src="SunRiseSet.js" script
+
+
+
+<script type='module'>
+
+import * as SRS from './SunRiseSet.js';
+console.log( SRS );
+
+
+let sunRise = SRS.sunRiseSet( 2022, 4, 23, -4, 38.24, -76.57, 90 + 50/60, true );
+console.log( `Sunrise = ${sunRise}` );
+
+let sunSet = SRS.sunRiseSet( 2022, 4, 23, -4, 38.24, -76.57, 90 + 50/60, false );
+console.log( `Sunset = ${sunSet}` );
+
+// Rome, Italy
+
+sunRise = SRS.sunRiseSet( 2022, 4, 23, +2, 41.903, 12.496, 90 + 50/60, true );
+console.log( `Rome Sunrise = ${sunRise}` );
+
+sunSet = SRS.sunRiseSet( 2022, 4, 23, +2, 41.903, 12.496, 90 + 50/60, false );
+console.log( `Rome Sunset = ${sunSet}` );
+
+</script>
